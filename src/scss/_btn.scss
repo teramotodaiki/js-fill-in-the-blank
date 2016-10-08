@@ -1,0 +1,19 @@
+  /* Material Design Like btn */
+@mixin btn ($hover: false) {
+
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  letter-spacing: .5px;
+  border-radius: 2px;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 2rem;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  transition: background-color .2s ease 0;
+  background-color: if($hover, #aaa, #888);
+
+}

@@ -1,0 +1,48 @@
+$prefix: jftb__ !default;
+
+
+.#{$prefix}formula {
+  @include formula;
+
+  @each $state in map-keys($formula-colors) {
+    &.#{$prefix}formula-#{$state} {
+      @include formula($state);
+    }
+  }
+
+  @each $type in map-keys($token-colors) {
+    .token_#{$type} {
+      @include token($type);
+    }
+  }
+}
+
+.#{$prefix}counter_container {
+  @include counter;
+}
+
+.#{$prefix}result_container {
+  @include result;
+
+  &.show {
+    @include result(true);
+  }
+}
+
+.card {
+  @include card;
+
+  @each $z in (1, 2, 3) {
+    &.card-#{$z} {
+      @include card($z);
+    }
+  }
+}
+
+a.btn {
+  @include btn;
+
+  &:hover {
+    @include btn(true);
+  }
+}

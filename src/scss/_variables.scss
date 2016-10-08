@@ -1,0 +1,31 @@
+$formula-colors: (correct: rgba(0, 255, 0, 0.1), invalid: rgba(255, 0, 0, 0.1)) !default;
+
+$token-colors: (
+  'number': rgb(145, 132, 224),
+  'boolean': rgb(145, 132, 224),
+  'math_operator': rgb(100,100,100),
+  'brackets': rgb(  0,  0,  0),
+  'bool_operator': rgb(190, 44, 132),
+  'equal': rgb(2, 111, 41),
+  'not_equal': rgb(192, 23, 30),
+  'greater_than': rgb(208, 205, 4),
+  'less_than': rgb(4, 206, 208),
+  'var_number': rgb(145, 132, 224),
+  'var_boolean': rgb(145, 132, 224),
+  'others': rgb(  0,  0,  0)
+) !default;
+
+$token-weights: (
+  'number': normal,
+  'boolean': normal,
+  'math_operator': normal,
+  'brackets': normal,
+  'bool_operator': normal,
+  'equal': bolder,
+  'not_equal': bolder,
+  'greater_than': bolder,
+  'less_than': bolder,
+  'var_number': normal,
+  'var_boolean': normal,
+  'others': normal
+) !default;

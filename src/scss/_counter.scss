@@ -1,0 +1,15 @@
+@mixin counter () {
+
+  .#{$prefix}counter {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: serif;
+  }
+
+  .#{$prefix}counter_current {
+    font-size: 1.4rem;
+  }
+
+}

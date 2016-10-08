@@ -1,0 +1,44 @@
+@mixin result($show: false) {
+
+  visibility: if($show, visible, hidden);
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100vw;
+  height: if($show, 100vh, 200vh);
+  background-color: rgba(0, 0, 0, .5);
+  opacity: if($show, 1, 0);
+  transition: opacity .2s ease 0, height .6s ease .2s;
+
+  .#{$prefix}result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .#{$prefix}result_card {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .#{$prefix}result_tweet {
+    text-align: center;
+
+    .btn {
+      background-color: rgb(27, 149, 224);
+    }
+  }
+
+  .#{$prefix}result_buttons {
+    text-align: right;
+    margin-top: 2rem;
+  }
+
+  .#{$prefix}result_retry,
+  .#{$prefix}result_close {
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+}

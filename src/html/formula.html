@@ -1,0 +1,15 @@
+{{#formulas}}
+<div id="{{id}}" class="jftb__formula card card-1">
+  {{#children}}
+
+    {{^isInput}}
+      <span class="jftb__token {{className}}" id="{{id}}">{{value}}</span>
+    {{/isInput}}
+
+    {{#isInput}}
+      <input class="jftb__token {{className}}" type="text" id="{{id}}" value="{{value}}" />
+    {{/isInput}}
+
+  {{/children}}
+</div>
+{{/formulas}}

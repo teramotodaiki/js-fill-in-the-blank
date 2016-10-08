@@ -1,0 +1,6 @@
+@mixin token ($type) {
+
+  color: map-get($token-colors, $type);
+  font-weight: map-get($token-weights, $type);
+  
+}
