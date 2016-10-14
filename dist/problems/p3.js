@@ -16,4 +16,4 @@ false == false
 ( true || i ) == ( false || i )
 ( i || B || B ) == ( true || B )
 ( B || B || i ) == ( i || B || B )
-( i || B || i ) != ( i || B || i )
+( i || B || i ) != ( false || i || false )
