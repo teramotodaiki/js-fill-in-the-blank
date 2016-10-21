@@ -21,4 +21,9 @@ Promise.all([
   // render all!
   jftb({ problems }, document.getElementById('app'));
 
-})
+});
+
+window.addEventListener('beforeunload', (event) => {
+  event.returnValue = "とちゅうのデータは　のこりません！";
+  return event.returnValue;
+});
