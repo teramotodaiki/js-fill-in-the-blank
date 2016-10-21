@@ -17,7 +17,7 @@ const types = [
     constructor: (token) => () => token
   },
   {
-    test: /\(\)/,
+    test: /[\(\)]/,
     className: 'token_brackets',
     constructor: (token) => () => token
   },
