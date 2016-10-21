@@ -7,10 +7,7 @@ import './scss/main';
 Promise.all([
 
   // problems
-  Promise.all(
-    Array.from({ length: 10 })
-    .map((n, i) => fetch(`./problems/p${i}.js`).then(res => res.ok ? res.text() : ''))
-  ),
+  fetch('./problem.js').then(res => res.ok ? res.text() : ''),
 
   // window onload
   new Promise((resolve, reject) => {
@@ -19,8 +16,7 @@ Promise.all([
   })
 
 ])
-.then(response => response[0].join('\n'))
-.then(problems => {
+.then(([problems]) => {
 
   // render all!
   jftb({ problems }, document.getElementById('app'));

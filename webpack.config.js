@@ -30,7 +30,7 @@ module.exports = {
     extensions: ['', '.js', '.html', '.scss']
   },
   devServer: {
-    contentBase: 'dist',
+    contentBase: 'example',
     port: process.env.PORT
   }
 };
