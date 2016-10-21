@@ -12,7 +12,7 @@ const types = [
     constructor: (token) => () => token
   },
   {
-    test: /[\+\*\/\%\-]/,
+    test: /[\+\*\/\%\-\=]/,
     className: 'token_math_operator',
     constructor: (token) => () => token
   },
@@ -44,6 +44,16 @@ const types = [
   {
     test: /<|<=/,
     className: 'token_less_than',
+    constructor: (token) => () => token
+  },
+  {
+    test: ';',
+    className: 'token_semicolon',
+    constructor: (token) => () => token
+  },
+  {
+    test: /var|function/,
+    className: 'token_keyword',
     constructor: (token) => () => token
   },
   {
