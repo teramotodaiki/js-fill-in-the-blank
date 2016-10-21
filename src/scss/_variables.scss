@@ -13,7 +13,7 @@ $token-colors: (
   'var_number': rgb(145, 132, 224),
   'var_boolean': rgb(145, 132, 224),
   'semicolon': rgb( 96, 96, 96),
-  'keyword_var': rgb(190, 44, 132),
+  'keyword': rgb(190, 44, 132),
   'others': rgb(  0,  0,  0)
 ) !default;
 
@@ -30,6 +30,6 @@ $token-weights: (
   'var_number': normal,
   'var_boolean': normal,
   'semicolon': bolder,
-  'keyword_var': bolder,
+  'keyword': bolder,
   'others': normal
 ) !default;

@@ -1,20 +1,20 @@
-var a = 1 ; a == 1
-var a = N ; a == i
-var a = N ; a + N == i
-var a = N ; i - a == N
-var a = N + N ; a == i
-var a = N - N ; a == i
-var a = 2 ; var b = 5 ; a + b == 7
-var a = N ; var b = N ; N - a - b == i
-var a = N ; var b = N ; N - a + b == i
-var a = 1 ; a = a + 1 ; a == 2
-var a = N ; a = a + N ; a == i
-var a = N ; a = a - N ; a == i
-var a = N ; a = N - a ; a + N == i
-var a = N ; a = N - a ; N - a == i
-var a = N ; a = N + i ; N + a == N
-var a = N ; var b = N ; a + b == i
-var a = N ; var b = i ; N - a + b == N
-var a = N ; var b = a + N ; b == i
-var a = i ; var b = N - a ; b == N
-var a = N ; var b = a - i ; b == N
+const a = 1 ; a == 1
+const a = N ; a == i
+const a = N ; a + N == i
+const a = N ; i - a == N
+const a = N + N ; a == i
+const a = N - N ; a == i
+const a = 2 ; const b = 5 ; a + b == 7
+const a = N ; const b = N ; N - a - b == i
+const a = N ; const b = N ; N - a + b == i
+const a = 1 ; const b = a + 1 ; b == 2
+const a = N ; const b = a + N ; b == i
+const a = N ; const b = a - N ; b == i
+const a = N ; const b = N - a ; b + N == i
+const a = N ; const b = N - a ; N - b == i
+const a = N ; const b = N + i ; N + b == N
+const a = N ; const b = N ; a + b == i
+const a = N ; const b = i ; N - a + b == N
+const a = N ; const b = a + N ; b == i
+const a = i ; const b = N - a ; b == N
+const a = N ; const b = a - i ; b == N

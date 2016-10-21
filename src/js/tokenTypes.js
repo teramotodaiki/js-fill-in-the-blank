@@ -52,8 +52,8 @@ const types = [
     constructor: (token) => () => token
   },
   {
-    test: "var",
-    className: 'token_keyword_var',
+    test: /var|let|const|if|else/,
+    className: 'token_keyword',
     constructor: (token) => () => token
   },
   {
