@@ -52,8 +52,8 @@ const types = [
     constructor: (token) => () => token
   },
   {
-    test: /var|function/,
-    className: 'token_keyword',
+    test: "var",
+    className: 'token_keyword_var',
     constructor: (token) => () => token
   },
   {
